@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <script src="./stringToRGBA.js"></script>
+        <script src="./Glow.js" ></script>
+        <script src="./MainParticle.js" ></script>
+        <script src="./SecondaryParticle.js" ></script>
+        <script src="./MouseTrail.js" ></script>
+        <script src="./MouseClickedParticles.js" ></script>
+        <script src="./Animator.js" ></script>
+    </head>
+    
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <script>
+            const canvas = document.getElementById("canvas");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const animator = new Animator(canvas);
+            animator.init(mainParticlesAmount=50, secondaryParticlesAmount=10);
+
+
+
+            // window.livelyPropertyListener = (name, val) => {
+            //     if (name === "particleColor") {
+            //         animator.updateParticleColor(val);
+            //     }
+            // };
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,7 @@
+{
+  "particleColor": {
+    "type": "color",
+    "text": "Main Particle Color",
+    "value": "#ff3333"
+  }
+}
