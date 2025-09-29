@@ -1,11 +1,12 @@
 class MouseTrail{
-    constructor(ctx, x1,y1,x2,y2){
+    constructor(ctx, x1,y1,x2,y2, edgeColor, centerColor){
         this.ctx=ctx;
         this.startX=x1;
         this.startY=y1;
         this.stopX=x2;
         this.stopY=y2;
-        this.color="#ff3333";
+        this.edgeColor=edgeColor;
+        this.centerColor=centerColor;
 
         this.isDead=false;
         this.lifetime=100;
@@ -25,12 +26,12 @@ class MouseTrail{
 
     draw() {
         this.ctx.save();
-        const {r,g,b} = stringRGBToRGB(this.color);
+        const {r,g,b} = stringRGBToRGB(this.edgeColor);
 
         this.ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${0.75})`;
         this.ctx.lineWidth = 6;         
         this.ctx.shadowBlur = 20;
-        this.ctx.shadowColor = "#ff3333";
+        this.ctx.shadowColor = this.edgeColor;
         this.ctx.beginPath();
         this.ctx.moveTo(this.startX, this.startY);
         this.ctx.lineTo(this.stopX, this.stopY);
@@ -40,13 +41,13 @@ class MouseTrail{
         this.ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${1})`;
         this.ctx.lineWidth = 4;         
         this.ctx.shadowBlur = 20;
-        this.ctx.shadowColor = "#ff3333";
+        this.ctx.shadowColor = this.edgeColor;
         this.ctx.beginPath();
         this.ctx.moveTo(this.startX, this.startY);
         this.ctx.lineTo(this.stopX, this.stopY);
         this.ctx.stroke();
 
-        this.ctx.strokeStyle = "#dddddd";
+        this.ctx.strokeStyle = this.centerColor;
         this.ctx.lineWidth = 2;
         this.ctx.beginPath();
         this.ctx.moveTo(this.startX, this.startY);

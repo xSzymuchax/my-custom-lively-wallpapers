@@ -1,5 +1,5 @@
 class SecondaryParticle {
-    constructor(ctx, canvasHeight, canvasWidth){
+    constructor(ctx, canvasHeight, canvasWidth, color){
         this.ctx = ctx;
         this.size = Math.random() * 10 + 1 ;
         this.maxX = canvasWidth;
@@ -8,7 +8,7 @@ class SecondaryParticle {
         this.x = (this.maxX + 0.25 * this.maxX) * Math.random() - 0.25 * this.maxX;
         this.y = this.maxY * Math.random();
 
-        this.color = "#ff3333";
+        this.color = color;
         this.speed = Math.random() * 0.4 + 0.1;
 
         // sinus movement

@@ -1,5 +1,5 @@
 class MainParticle {
-    constructor(ctx, canvasHeight, canvasWidth, startAtBottom=true){
+    constructor(ctx, canvasHeight, canvasWidth, color, startAtBottom=true){
         this.ctx = ctx;
         this.size = Math.random() * 2 + 10;
         this.maxX = canvasWidth;
@@ -12,7 +12,7 @@ class MainParticle {
         if (!startAtBottom)
             this.y = canvasHeight * Math.random();
 
-        this.color = "#ff3333";
+        this.color = color;
         this.speed = Math.random() * 1 + 1;
         
         this.scaleXfactor = Math.random() * 0.1 + 0.2;

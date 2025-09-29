@@ -23,13 +23,10 @@
             const animator = new Animator(canvas);
             animator.init(mainParticlesAmount=50, secondaryParticlesAmount=10);
 
-
-
-            // window.livelyPropertyListener = (name, val) => {
-            //     if (name === "particleColor") {
-            //         animator.updateParticleColor(val);
-            //     }
-            // };
+            window.livelyPropertyListener = (name, val) => {
+                animator.updateProperty(name, val);
+            };
+            
         </script>
     </body>
 

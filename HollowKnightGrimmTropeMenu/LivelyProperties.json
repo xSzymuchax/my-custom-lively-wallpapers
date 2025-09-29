@@ -1,7 +1,47 @@
 {
-  "particleColor": {
+  "mainParticleColor": {
     "type": "color",
     "text": "Main Particle Color",
     "value": "#ff3333"
+  },
+  "secondaryParticleColor": {
+    "type": "color",
+    "text": "Secondary Particle Color",
+    "value": "#ff3333"
+  },
+  "glowColor": {
+    "type": "color",
+    "text": "Background Glowing Color",
+    "value": "#e63232cc"
+  },
+  "mouseTrailEdgeColor": {
+    "type": "color",
+    "text": "Mouse Trail Glowing Color",
+    "value": "#ff3333"
+  },
+  "mouseTrailCenterColor": {
+    "type": "color",
+    "text": "Mouse Trail Center Color",
+    "value": "#ffffff"
+  },
+  "mouseClickParticleColor": {
+    "type": "color",
+    "text": "Mouse Click Bubble Color",
+    "value": "#aa2222"
+  },
+  "backgroundColor": {
+    "type": "color",
+    "text": "Background Color",
+    "value": "#000000"
+  },
+  "mouseTrailActive": {
+    "type": "checkbox",
+    "text": "Mouse Trail Activer",
+    "value": true
+  },
+  "mouseClickParticleActive": {
+    "type": "checkbox",
+    "text": "Mouse Click Bubbles Active",
+    "value": true
   }
 }

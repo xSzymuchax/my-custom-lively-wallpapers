@@ -1,5 +1,5 @@
 class Glow{
-    constructor(ctx, x, y, power=100, angle=0, scaleX=1, scaleY=1){
+    constructor(ctx, x, y, color, power=100, angle=0, scaleX=1, scaleY=1){
         this.ctx = ctx;
         this.x = x;
         this.y = y;
@@ -7,7 +7,7 @@ class Glow{
         this.angle=angle;
         this.scaleX=scaleX;
         this.scaleY=scaleY;
-        this.color = "#e63232cc";
+        this.color = color;
 
         console.log(this.x, this.y);
     }

@@ -1,11 +1,11 @@
 class MouseClickedParticles{
-    constructor(ctx,x,y){
+    constructor(ctx,x,y,color){
         this.ctx=ctx;
         this.x=x + 10 - Math.random() * -20;
         this.y=y + 10 - Math.random() * -20;
 
         this.size = 2 + Math.random() * 10;
-        this.color="#aa2222"
+        this.color=color;
         this.isDead=false;
         this.speedY = Math.random()+0.7;
         this.speedX = Math.random()*-2 +1;
