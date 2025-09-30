@@ -113,6 +113,9 @@ class Animator {
 
         // mouse spying
         canvas.addEventListener('mousemove', (event) => {
+            if (!this.mouseTrailActive)
+                return;
+            
             const now = performance.now();
 
             if (now - this.lastMouseMove < this.throttleTime) return;
@@ -135,6 +138,9 @@ class Animator {
 
         //mouse clicked
         canvas.addEventListener('click', (event) => { 
+            if (!this.mouseClickParticleActive)
+                return;
+            
             const rect = canvas.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
