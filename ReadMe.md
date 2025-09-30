@@ -30,8 +30,8 @@ All you need to do is:
 
 ## Hollow Knight - Grimm Troupe Theme Menu
 
-So, recently i was playing hollow knight, and this menu made a really good impression on me, so... 
+So, recently i was playing hollow knight, and this menu made a really good impression on me, so inspired by that... 
 
-I made a version that is possible to set as wallpaper :p
+I made my version that is possible to set as wallpaper :p
 
 ![HollowKnightGrimmTropeMenu](Examples/HollowKnightGrimmTropeMenu.png)
