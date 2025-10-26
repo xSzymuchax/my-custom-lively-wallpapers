@@ -7,6 +7,8 @@ Examples is a folder... with examples :D
 
 # How to add wallpaper
 
+Open lively and click '+' button, then select .zip file with wallpaper. (For some reason Lively doesn't recognize my zips so...)
+
 All you need to do is:
 
 1) Have Lively Wallpapers installed on your device.
@@ -35,3 +37,19 @@ So, recently i was playing hollow knight, and this menu made a really good impre
 I made a version that is possible to set as wallpaper :p
 
 ![HollowKnightGrimmTropeMenu](Examples/HollowKnightGrimmTropeMenu.png)
+
+
+## Love
+
+This one allows you to put some photos of your loved ones on your screen. To do this, just add some photos into 
+
+'PhotoHeartParticle/SamplePhotos'. Then, you need to write down filenames into 'photos.json', or use prepared script.
+
+Script will do it for you, just start it. You need python installed. Example value for json is:
+
+[
+    "filename1",
+    "filaname2"
+]
+
+![Love](Examples/Love.png)

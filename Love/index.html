@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <script type="module">
+            import {Animator} from './Animator.js';
+            
+            const canvas = document.getElementById("canvas");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const animator = new Animator(canvas);
+            animator.init(10, 2);
+
+            window.livelyPropertyListener = (name, val) => {
+                animator.updateProperty(name, val);
+            };
+            
+        </script>
+    </body>
+
+</html>
