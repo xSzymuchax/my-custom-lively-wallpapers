@@ -17,7 +17,7 @@ function WeatherCard() {
                 <div className="
                     absolute left-1/2 top-0 z-0 w-[128px] h-[128px]
                     -translate-x-1/2 -translate-y-1/2
-                    bg-white/50 mx-auto">
+                    bg-white/1 mx-auto">
                 </div>
 
                 <h1 className='
@@ -31,35 +31,35 @@ function WeatherCard() {
 
             <div className='flex-col p-4 text-1xl items-center w-auto  m-5'>
                 <div className='flex mb-2'>
-                    <div className='w-[16px] h-[16px] bg-red-500 m-1 ml-0'></div>
+                    <img src='src/assets/temperatura.png' className='w-[16px] h-[16px] m-1 ml-0'></img>
                     <h2>Temperatura</h2>
                     <div className='flex-grow pt-3 border-b-2 border-white/20'></div>
                     <p>26 C</p>
                 </div>
 
                 <div className='flex mb-2'>
-                    <div className='w-[16px] h-[16px] bg-red-500 m-1 ml-0'></div>
+                    <img src='src/assets/wiatr.png' className='w-[16px] h-[16px] m-1 ml-0'></img>
                     <h2>Wiatr</h2>
                     <div className='flex-grow pt-3 border-b-2 border-white/20'></div>
                     <p>10 km/h</p>
                 </div>  
 
                 <div className='flex mb-2'>
-                    <div className='w-[16px] h-[16px] bg-red-500 m-1 ml-0'></div>
+                    <img src='src/assets/opady.png' className='w-[16px] h-[16px] m-1 ml-0'></img>
                     <h2>Opady</h2>
                     <div className='flex-grow pt-3 border-b-2 border-white/20'></div>
                     <p>3 mm</p>
                 </div>  
 
                 <div className='flex mb-2'>
-                    <div className='w-[16px] h-[16px] bg-red-500 m-1 ml-0'></div>
+                    <img src='src/assets/wilgotnosc.png' className='w-[16px] h-[16px] m-1 ml-0'></img>
                     <h2>Wilgotność</h2>
                     <div className='flex-grow pt-3 border-b-2 border-white/20'></div>
                     <p>50 %</p>
                 </div>
 
                 <div className='flex mb-2'>
-                    <div className='w-[16px] h-[16px] bg-red-500 m-1 ml-0'></div>
+                    <img src='src/assets/cisnienie.png' className='w-[16px] h-[16px] m-1 ml-0'></img>
                     <h2>Ciśnienie</h2>
                     <div className='flex-grow pt-3 border-b-2 border-white/20'></div>
                     <p>1000 hPa</p>
